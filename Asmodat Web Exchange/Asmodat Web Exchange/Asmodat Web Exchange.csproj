@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89283F80-9EA6-4665-8981-9F4BCD52FCE9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Asmodat_Web_Exchange</RootNamespace>
+    <AssemblyName>Asmodat Web Exchange</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.3.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.15.1.3.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Asmodat">
+      <HintPath>..\..\Asmodat\Asmodat\bin\Debug\Asmodat.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmodatCryptoExchange">
+      <HintPath>..\..\Asmodat Crypto Exchange\Asmodat Crypto Exchange\bin\Debug\AsmodatCryptoExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PayPal, Version=1.5.0.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap-select-master\css\bootstrap-select.css" />
+    <Content Include="bootstrap-select-master\css\bootstrap-select.min.css" />
+    <Content Include="bootstrap-select-master\js\bootstrap-select.js" />
+    <Content Include="bootstrap-select-master\js\bootstrap-select.min.js" />
+    <Content Include="Controls\AlertsControl\AlertsControl.ascx" />
+    <Content Include="Exchange.aspx" />
+    <Content Include="ExchangeControl.ascx" />
+    <Content Include="FundingsControl.ascx" />
+    <Content Include="OrderControl.ascx" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <Content Include="bootstrap-select-master\css\bootstrap-select.css.map" />
+    <Content Include="bootstrap-select-master\js\bootstrap-select.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ExchangeMaster.Master" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="startasmodat-bare-1.0.1\css\asmodat.css" />
+    <Content Include="startasmodat-bare-1.0.1\js\asmodat.js" />
+    <Content Include="startbootstrap-bare-1.0.3\css\bootstrap.css" />
+    <Content Include="startbootstrap-bare-1.0.3\css\bootstrap.min.css" />
+    <Content Include="startbootstrap-bare-1.0.3\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="startbootstrap-bare-1.0.3\js\bootstrap.js" />
+    <Content Include="startbootstrap-bare-1.0.3\js\bootstrap.min.js" />
+    <Content Include="startbootstrap-bare-1.0.3\js\jquery.js" />
+    <Content Include="StartControl.ascx" />
+    <Content Include="Controls\UpdateControls\UpdateTextBox.ascx" />
+    <Content Include="Controls\UpdateControls\UpdateButton.ascx" />
+    <Content Include="Controls\UpdateControls\UpdateDropDownList\UpdateDropDownList.ascx" />
+    <Content Include="Controls\UpdateControls\UpdateLabelButton.ascx" />
+    <Content Include="Controls\UpdateControls\UpdateLabel.ascx" />
+    <Content Include="Tracking.aspx" />
+    <Content Include="TrackingControl.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="startbootstrap-bare-1.0.3\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="startbootstrap-bare-1.0.3\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="startbootstrap-bare-1.0.3\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="startbootstrap-bare-1.0.3\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AlertsControl\AlertsControl.ascx.cs">
+      <DependentUpon>AlertsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AlertsControl\AlertsControl.ascx.designer.cs">
+      <DependentUpon>AlertsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDropDownList.cs" />
+    <Compile Include="Controls\ExchangeControl\Buttons.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ExchangeControl\DropDownsEx.cs" />
+    <Compile Include="Controls\ExchangeControl\DropDowns.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ExchangeControl\TextBoxes.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FundingsControl\InitializeAddress.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FundingsControl\InitializeFundings.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FundingsControl\DropDowns.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FundingsControl\DropDownsEx.cs" />
+    <Compile Include="Controls\OrderControl\InitializeTrackingNumber.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OrderControl\Execute.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OrderControl\InitializeTerms.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateControls\UpdateDropDownList\Uddl-ListEx.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exchange.aspx.cs">
+      <DependentUpon>Exchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exchange.aspx.designer.cs">
+      <DependentUpon>Exchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExchangeControl.ascx.cs">
+      <DependentUpon>ExchangeControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExchangeControl.ascx.designer.cs">
+      <DependentUpon>ExchangeControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExchangeManager\ExchangeManager.cs" />
+    <Compile Include="ExchangeManager\Exchange\ExchangeJsonEx.cs" />
+    <Compile Include="ExchangeManager\Exchange\ExchangeJson.cs" />
+    <Compile Include="ExchangeManager\OrderJson.cs" />
+    <Compile Include="ExchangeManager\Processing\ProcessingJson.cs" />
+    <Compile Include="ExchangeManager\Fundings\FundingsJsonEx.cs" />
+    <Compile Include="ExchangeManager\Fundings\Properties.cs" />
+    <Compile Include="ExchangeManager\Fundings\FundingsJson.cs" />
+    <Compile Include="ExchangeManager\OrdersManager.cs" />
+    <Compile Include="ExchangeManager\Fundings\FundingsEx.cs" />
+    <Compile Include="ExchangeManager\Fundings\Fundings.cs" />
+    <Compile Include="ExchangeManager\Fundings\FundingsManager.cs" />
+    <Compile Include="ExchangeManager\PayPal\PayPalJsonEx.cs" />
+    <Compile Include="ExchangeManager\PayPal\PayPalJson.cs" />
+    <Compile Include="ExchangeMaster.Master.cs">
+      <DependentUpon>ExchangeMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExchangeMaster.Master.designer.cs">
+      <DependentUpon>ExchangeMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FundingsControl.ascx.cs">
+      <DependentUpon>FundingsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FundingsControl.ascx.designer.cs">
+      <DependentUpon>FundingsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="OrderControl.ascx.cs">
+      <DependentUpon>OrderControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderControl.ascx.designer.cs">
+      <DependentUpon>OrderControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session\ExchangeSettings\CalculateExchangeSettings.cs" />
+    <Compile Include="Session\InfoPayPal.cs" />
+    <Compile Include="Session\InfoTracking.cs" />
+    <Compile Include="Session\InfoExchangeOrder.cs" />
+    <Compile Include="Session\InfoFundingSEx.cs" />
+    <Compile Include="Session\InfoFunding.cs" />
+    <Compile Include="Session\InfoExchange.cs" />
+    <Compile Include="Session\InfoTicker.cs" />
+    <Compile Include="Session\SessionManager.cs" />
+    <Compile Include="StartControl.ascx.cs">
+      <DependentUpon>StartControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StartControl.ascx.designer.cs">
+      <DependentUpon>StartControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateControls\UpdateTextBox.ascx.cs">
+      <DependentUpon>UpdateTextBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateControls\UpdateTextBox.ascx.designer.cs">
+      <DependentUpon>UpdateTextBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateControls\UpdateButton.ascx.cs">
+      <DependentUpon>UpdateButton.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateControls\UpdateButton.ascx.designer.cs">
+      <DependentUpon>UpdateButton.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateControls\UpdateDropDownList\UpdateDropDownList.ascx.cs">
+      <DependentUpon>UpdateDropDownList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateControls\UpdateDropDownList\UpdateDropDownList.ascx.designer.cs">
+      <DependentUpon>UpdateDropDownList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateControls\UpdateLabelButton.ascx.cs">
+      <DependentUpon>UpdateLabelButton.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateControls\UpdateLabelButton.ascx.designer.cs">
+      <DependentUpon>UpdateLabelButton.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UpdateControls\UpdateLabel.ascx.cs">
+      <DependentUpon>UpdateLabel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UpdateControls\UpdateLabel.ascx.designer.cs">
+      <DependentUpon>UpdateLabel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tracking.aspx.cs">
+      <DependentUpon>Tracking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tracking.aspx.designer.cs">
+      <DependentUpon>Tracking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrackingControl.ascx.cs">
+      <DependentUpon>TrackingControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrackingControl.ascx.designer.cs">
+      <DependentUpon>TrackingControl.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52092</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52092/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

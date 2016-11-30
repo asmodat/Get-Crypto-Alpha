@@ -1,0 +1,70 @@
+.asm-valing-middle {vertical-align:middle !important;}
+
+.asm-tallign-center {text-align:center !important;}
+.asm-callign-center {display:block !important; margin:auto !important;}
+
+.asm-font-10px {font-size: 10px !important;}
+.asm-font-17px {font-size: 17px !important;} .asm-font-18px {font-size: 18px !important;}
+.asm-font-26px {font-size: 26px !important;}
+.asm-font-28px {font-size: 28px !important;}
+.asm-font-30px {font-size: 28px !important;}
+
+.asm-height-15px { height: 15px !important;} .asm-height-16px { height: 16px !important;} .asm-height-17px { height: 17px !important;} .asm-height-18px { height: 18px !important;}
+.asm-height-42px { height: 42px !important;}
+.asm-height-44px { height: 44px !important;} .asm-height-45px { height: 45px !important;} .asm-height-46px { height: 46px !important;}
+.asm-height-48px { height: 48px !important;}
+.asm-height-49px { height: 49px !important;} .asm-height-50px { height: 50px !important;}
+.asm-height-100px { height: 100px !important;}
+
+.asm-height-100p { height: 100% !important;}
+
+.asm-width-100px { width: 100px !important;}
+
+.asm-width-95 { width: 95% !important;}
+
+.asm-border-radius-0px { border-radius: 0px !important;}
+.asm-border-radius-6px { border-radius: 6px !important;}
+
+.asm-input-lg-21c {height: 46px;width: 400px;font-size: 32px;border-radius: 6px;text-align:center;}
+.asm-input-lg-24c {height: 46px;width: 400px;font-size: 28px;border-radius: 6px;text-align:center;}
+.asm-input-lg-39c {height: 46px;width: 400px;font-size: 18px;line-height: 1.3333333;border-radius: 6px;text-align:center;}
+.asm-input-lg-44c {height: 46px;width: 400px;font-size: 16px;line-height: 1.3333333;border-radius: 6px;text-align:center;}
+
+.asm-border-right-0px { border-right: 0px !important; }
+.asm-border-left-0px { border-left: 0px !important; }
+.asm-border-top-0px { border-top: 0px !important; }
+.asm-border-bottom-0px { border-bottom: 0px !important; }
+
+.asm-margin-top--5px {  margin-top: -5px !important;}
+.asm-margin-top--15px {  margin-top: -15px !important;}
+.asm-margin-top--30px {  margin-top: -30px !important;}
+
+.asm-checkbox-md
+{
+    margin-top: -5px;
+    font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 2em;
+    padding-right: 6px;
+    min-width: 8em;
+    border-radius: 6px;
+}
+
+.asm-font-bold{ font-weight: bold !important;}
+
+.asm-border-md-red
+{ 
+    border-color:red;
+    border-style:outset;
+    border-width:medium;
+    border-radius: 6px;
+}
+
+.asm-border-li-red
+{ 
+    border-color:red;
+    border-style:outset;
+    border-width:thin;
+    border-radius: 6px;
+}
